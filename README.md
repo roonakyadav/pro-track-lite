@@ -231,6 +231,29 @@ This project is open source and available under the MIT License. Feel free to us
 
 ---
 
+## 📈 Recent Updates
+
+### v1.0.2 (Latest)
+- Added browser notifications for due date reminders
+- Enhanced accessibility with ARIA labels
+- Improved meta descriptions and SEO
+- Added code documentation headers
+- Performance optimizations
+
+### v1.0.1
+- Added live demo link
+- Version info in page titles
+- Enhanced error pages
+
+### v1.0.0 (Initial Release)
+- Complete task management system
+- Analytics dashboard with charts
+- LocalStorage persistence
+- Responsive design
+- Dark/light theme support
+
+---
+
 **Built with ❤️ using modern web technologies**
 
 Happy task management! 🚀
