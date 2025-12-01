@@ -1,4 +1,5 @@
-// Task management for ProTrack Lite
+// ProTrack Lite v1.0 - Task Management System
+// Professional task management with persistence, analytics, and responsive design
 
 let tasks = [];
 
