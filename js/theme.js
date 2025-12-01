@@ -1,6 +1,10 @@
-// Theme management for ProTrack Lite
+// Theme management for ProTrack Lite v1.0.2
+// Handles dark/light theme switching and localStorage persistence
 
-// Theme toggle functionality
+/**
+ * Toggles between dark and light themes
+ * Updates both the document element classes and localStorage
+ */
 function toggleTheme() {
     const html = document.documentElement;
     const isDark = html.classList.contains('dark');
