@@ -31,7 +31,7 @@ function saveTasks() {
     updateProgress();
 }
 
-// Check due date reminders
+// Check due date reminders and show browser notifications if permitted
 function checkReminders() {
     const today = new Date();
     const tomorrow = new Date(today);
@@ -43,6 +43,16 @@ function checkReminders() {
             if (dueDate <= tomorrow && dueDate >= today) {
                 // Show reminder - for simplicity, just console.log or could add notification
                 console.log(`Reminder: Task "${task.title}" is due ${dueDate.toDateString()}`);
+
+                // Request notification permission and show if granted
+                if ('Notification' in window && Notification.permission === 'granted') {
+                    new Notification(`Task Due: ${task.title}`, {
+                        body: `Due date: ${dueDate.toLocaleDateString()}`,
+                        icon: '/favicon.ico' // Could add a favicon
+                    });
+                } else if ('Notification' in window && Notification.permission !== 'denied') {
+                    Notification.requestPermission();
+                }
             }
         }
     });
