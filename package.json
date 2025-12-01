@@ -1,0 +1,32 @@
+{
+    "name": "protrack-lite",
+    "version": "1.0.2",
+    "description": "Professional Task & Productivity Web Application",
+    "main": "index.html",
+    "scripts": {
+        "start": "npx serve",
+        "dev": "python -m http.server 8000",
+        "build": "echo 'Static site - no build needed'",
+        "clean": "rm -rf node_modules package-lock.json"
+    },
+    "keywords": [
+        "productivity",
+        "task-manager",
+        "web-app",
+        "javascript",
+        "tailwindcss"
+    ],
+    "author": "Roona Yadav",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/roonakyadav/pro-track-lite.git"
+    },
+    "bugs": {
+        "url": "https://github.com/roonakyadav/pro-track-lite/issues"
+    },
+    "homepage": "https://roonakyadav.github.io/pro-track-lite/",
+    "devDependencies": {
+        "serve": "^14.0.0"
+    }
+}
