@@ -76,3 +76,30 @@
         background: white !important;
     }
 }
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+    .task-card {
+        margin-bottom: 1rem;
+    }
+
+    .mobile-text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .mobile-p-4 {
+        padding: 1rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .task-card {
+        border: 2px solid currentColor;
+    }
+
+    .bg-blue-600 {
+        background-color: #001122 !important;
+    }
+}
