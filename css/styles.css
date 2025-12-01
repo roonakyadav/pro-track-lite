@@ -1,0 +1,53 @@
+/* Custom styles for ProTrack Lite */
+
+/* Add any additional styling here if needed */
+
+/* Ensure smooth transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Task card styles */
+.task-card {
+    transition: all 0.3s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for new tasks */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.new-task {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
